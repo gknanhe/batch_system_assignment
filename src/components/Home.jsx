@@ -28,7 +28,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        if (productCardVariant === "viewAll") {
+        if ((await productCardVariant) === "viewAll") {
           const response = await fetch(
             "https://fakestoreapi.com/products?limit=10"
           );
@@ -52,7 +52,8 @@ const Home = () => {
     };
 
     fetchProducts();
-  }, []);
+    console.log("use effect triggered", productCardVariant);
+  }, [navbar, productCardType, productCardVariant]);
 
   const handleScroll = () => {
     if (
@@ -163,7 +164,7 @@ const Home = () => {
           </div>
           <div className="flex overflow-y-auto justify-center items-center ">
             {productCardVariant === "viewAll" ? (
-              <div className="h-full w-full bg-[#f7f8fd] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center lg:w-[80%]">
+              <div className="h-auto w-full bg-[#f7f8fd] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center lg:w-[80%]">
                 {products.map((product) => (
                   <Card
                     product={product}

@@ -74,7 +74,7 @@ export default function ListBox({ name, options, handleValueChange }) {
                             viewBox="0 0 20 20"
                             fill="currentColor"
                             aria-hidden="true"
-                            class="h-5 w-5"
+                            className="h-5 w-5"
                           >
                             <path
                               fill-rule="evenodd"

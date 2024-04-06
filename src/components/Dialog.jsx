@@ -148,8 +148,8 @@ export default function MyModal() {
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         >
                           {/* <option selected>Select productCardType </option> */}
-                          <option value="with_buttons">With Buttons</option>
-                          <option value="withaut_buttons">
+                          <option value="withButtons">With Buttons</option>
+                          <option value="withautButtons">
                             withaut Buttons
                           </option>
                         </select>
@@ -181,7 +181,7 @@ export default function MyModal() {
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         >
                           {/* <option selected>Select productCardVariant </option> */}
-                          <option value="view_all">View all </option>
+                          <option value="viewAll">View all </option>
                           <option value="carousel">Carousel </option>
                         </select>
                       </div>
