@@ -33,15 +33,16 @@ This is an e-commerce web application built with React.js. It allows users to br
 
 Install dependencies:
 
-````bash
+      ````bash
 
-    cd e-commerce-store
-    npm install
+          cd e-commerce-store
+          npm install
 
 Start the development server:
-```bash
 
-    npm start
+         ````bash
+
+         npm start
 
 Open your browser and navigate to http://localhost:3000 to view the application.
 
@@ -53,4 +54,7 @@ Add products to your cart by clicking the "Add to Cart" button.
 Adjust settings such as view type and layout using the settings menu.
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
-````
+
+```
+
+```
